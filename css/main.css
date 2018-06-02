@@ -145,6 +145,8 @@ img {
     color: #6479a2;
     padding-top: 90px;
     padding-bottom: 190px;
+    width: 100%;
+    background-repeat: no-repeat;
 }
 
 .footer p {
