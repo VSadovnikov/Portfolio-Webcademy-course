@@ -2,6 +2,7 @@ html, body {
     font-family: 'PT Sans Caption', sans-serif;
     font-size: 16px;
     line-height: 1.5;
+    min-width: 280px;
 }
 
 img {
@@ -60,6 +61,7 @@ img {
     justify-content: center;
 
     position: relative;
+    min-height: 400px;
 
 }
 
@@ -112,10 +114,16 @@ img {
     margin-bottom: 17px;
 }
 
+.portfolio-item__img img{
+    max-width: 100%;
+    height: auto;
+}
+
 .portfolio-item__title {
     font-size: 24px;
     line-height: normal;
     margin-bottom: 5px;
+    text-align: center;
 }
 
 .portfolio-item__title a {
@@ -230,6 +238,10 @@ p.footer__social-icons a:hover {
     display: block;
 }
 
+.portfolio_caption {
+  text-align: center;
+}
+
 .button-back {
     font-weight: 700;
     text-decoration: none;
@@ -260,6 +272,57 @@ p.footer__social-icons a:hover {
     border-color:blue;
     background-color: blue;
     transition: 0.8s ease-out;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*Media*/
+
+@media (max-width: 1160px) {
+    .container {
+        width: 100%;
+    }
+
+    .col-4 {
+        box-sizing: border-box;
+        width: 100%;
+        margin: 0;
+        margin-bottom: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
+        text-align: center;
+    }
+
+    .header {
+        width: 100%;
+        box-sizing: border-box;
+        padding-left: 15px;
+        padding-right: 15px;
+
+    }
+
+    .footer {
+        height: auto;
+    }
+
+    .header__title {
+        font-size: 38px;
+        line-height: 48px;
+        margin-bottom: 15px;
+    }
+
+    .header_slogan {
+        font-size: 22px;
+        line-height: 38px;
+    }
+
+    .portfolio {
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
 
 }
 
